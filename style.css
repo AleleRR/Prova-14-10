@@ -1,0 +1,19 @@
+#content-display {
+    min-height: 60vh;
+}
+
+.card-img-top {
+    height: 320px;
+    object-fit: cover;
+    background-color: #e9ecef;
+}
+
+.game-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
