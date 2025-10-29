@@ -136,10 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             console.log('Reposta da API (Twitch - Busca):', data);
             
-            // ATENÇÃO: A API da Twitch retorna { data: [...] }
             renderGames(data.data);
 
-            // FUNCIONALIDADE 1: Registrar log na API da Unoesc
             registerLog('Pesquisa de Jogo (Twitch)', `Busca por: '${query}'. Retornados ${data.data.length} jogos.`);
         })
         .catch(error => {
@@ -252,4 +250,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     fetchTopGames();
+
 });
